@@ -1,6 +1,6 @@
 This is a simple React app that uses the TMDB API to retreive a list of popular movies and display their information, also including the possibility to query for specific movies via searchbar. 
 
-The calls are done with Axios and the styling is in plain css, with two media queries for smaller and medium sized screen. 
+The calls are done with Axios and the styling is in plain css, with two light media queries adjustments for smaller and medium sized screen. 
 
 
 
