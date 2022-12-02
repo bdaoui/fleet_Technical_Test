@@ -4,7 +4,15 @@ const Content = ({chosenMovie}) => {
 
   return (
     <div>
+    {!chosenMovie &&
+    <div id='First_Load'>
+        <h1>Welcome to Search a Movie</h1>
+        <p>To start please select a movie from the sidebar, or try to look for your favorite movie via the searchbar!</p>    
+    </div>
+    }
     
+    {chosenMovie &&
+    <div> 
     <section id='content_First_Section'>
         <h1>{chosenMovie.title}</h1>
         <h2>{chosenMovie.tagline}</h2>
@@ -25,7 +33,8 @@ const Content = ({chosenMovie}) => {
     <section id="content_Second_Section">
         <p>{chosenMovie.overview}</p>
     </section>
-    
+    </div>
+    }
     
     </div>
   )
