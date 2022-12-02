@@ -1,0 +1,24 @@
+#main_container{
+
+    display:flex;
+    justify-content: center;
+    
+    width: 100vw;
+
+
+}
+
+
+#main_container div:first-child{
+    width:40vw;
+    background-color: red;
+    height: 100vh;
+
+
+}
+
+#main_container div:last-child{
+    width: 60vw;
+    height: 100vh;
+    background-color: blue ;
+}
