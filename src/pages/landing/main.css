@@ -1,24 +1,205 @@
+body{
+    background-color: rgb(5, 58, 58) ;
+}
+
 #main_container{
 
     display:flex;
     justify-content: center;
     
     width: 100vw;
+    height: 100vh;
 
+    overflow: hidden;
 
 }
 
-
-#main_container div:first-child{
+#main_container > div:first-child{
     width:40vw;
-    background-color: red;
-    height: 100vh;
+    font-size: 1rem;
+
+
+    overflow-y: scroll;
 
 
 }
 
-#main_container div:last-child{
+#main_container > div:last-child{
     width: 60vw;
-    height: 100vh;
-    background-color: blue ;
+    background-color: lightgreen ;
+    overflow-y: scroll;
+
 }
+
+
+/* SearchBar Styling */
+
+#Searchbar_Container{
+    background-color: rgb(5, 58, 58);
+    padding: 5%;
+
+}
+
+#Searchbar_Container input{
+    width: 20vw;
+    background-color: lightgreen;
+
+}
+#Searchbar_Container label{
+    color: lightgreen;
+    padding-right: 2%;
+
+    font-size: medium ;
+
+}
+
+
+
+/* List of Film Styling */
+
+#movie_list{
+    background-color: rgb(5, 58, 58);
+    border: 1px solid black;
+    padding: 2%;
+
+    color: lightgreen;
+}
+
+#movie_list> div{
+    border: 1px solid black;
+    margin-top: 4%;
+
+}
+
+
+/* Content Movie Styling  */
+/* First Section */
+
+#content_First_Section > img{
+    width: 20vw;
+    margin-bottom: 5%;
+}
+
+
+
+#content_First_Section > h1{
+    color:rgb(5, 58, 58);
+    margin-bottom: 0;
+}
+
+#content_First_Section > h2{
+    color:rgb(5, 58, 58);
+    font-size: medium;
+}
+
+
+#content_Movie_Genres{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+    color:rgb(5, 58, 58)
+}
+
+#content_Movie_Genres > div{
+ background-color: rgb(5, 58, 58);
+ color: lightgreen;
+ padding: 2%;
+
+ border-radius: 25%;
+}
+
+#content_First_Section  span{
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+#content_First_Section  p{
+margin-top: 3%;
+}
+/* Second Section */
+
+#content_Second_Section > p {
+    padding: 0 10%;
+    color: rgb(5, 58, 58);
+    text-align: left;
+}
+
+
+
+/* Medium & Tablet */
+
+@media screen and (min-width:500px ) and (max-width: 1024px) {
+  /* Sidebar  */
+    
+  #main_container > div:first-child{
+    font-size: 0.7rem;
+  }
+
+    /* Content Movie Styling  */
+    /* First Section */
+
+    #content_First_Section > img{
+        width: 40vw;
+        margin-bottom: 5%;
+    }
+    
+
+
+}
+
+
+/* Smaller Screen */
+
+
+@media screen and (max-width: 500px) {
+    /* Sidebar  */
+
+    #Searchbar_Container label{
+        font-size: small ;
+    
+    }
+    
+    
+    #main_container > div:first-child{
+        width:30vw;
+        overflow-y: scroll;
+        font-size: 0.51rem;
+
+    
+    
+    }
+    #main_container > div:last-child{
+        width: 70vw;
+        background-color: lightgreen ;
+        overflow-y: scroll;
+    
+    }
+    
+
+    /* Content Movie Styling  */
+    /* First Section */
+
+    #content_First_Section > img{
+        width: 50vw;
+        margin-bottom: 5%;
+    }
+    
+
+    #content_Movie_Genres{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    
+        color:rgb(5, 58, 58)
+    }
+
+    #content_Movie_Genres > div{
+        background-color: rgb(5, 58, 58);
+        color: lightgreen;
+        width: fit-content;
+        border-radius: 25%;
+       }
+    
+  }
